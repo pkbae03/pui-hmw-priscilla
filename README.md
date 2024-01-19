@@ -1,5 +1,5 @@
 # PUI homework
 
-Deployed website: `add the URL to your deployed website`
+Deployed website: `https://<pkbae03>.github.io/<pui-hmw-priscilla>`
 
-Repository link: `add the URL to this repository`
+Repository link: `https://github.com/pkbae03/pui-hmw-priscilla.git`
