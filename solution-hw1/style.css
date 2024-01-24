@@ -1,12 +1,20 @@
 body{
 text-align: center;
 }
+#products a.active{
+    background-color: yellow;
+}
+#cart a.active{
+    background-color: yellow;
+}
 
 #roll img{
+    width: 400px;
+    height: 600px;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 40%;
+    width: 50%;
 }
 
 hr{
