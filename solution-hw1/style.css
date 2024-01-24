@@ -1,16 +1,22 @@
 body{
-    max-width: 500px;
-    margin: auto;
+text-align: center;
+}
+
+#roll img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
 }
 
 hr{
-    height: 5px;
+    height: 2px;
 }
 
 #logo{
     width: 400px;
 }
 
-#roll img:hover, p:hover{
+#roll.div:hover{
     background-color: yellow;
 }
