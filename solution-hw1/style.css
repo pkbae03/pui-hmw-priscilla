@@ -1,3 +1,8 @@
+body{
+    max-width: 500px;
+    margin: auto;
+}
+
 hr{
     height: 5px;
 }
@@ -6,6 +11,6 @@ hr{
     width: 400px;
 }
 
-#roll.div:hover{
+#roll img:hover, p:hover{
     background-color: yellow;
 }
