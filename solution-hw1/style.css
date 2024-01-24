@@ -1,3 +1,11 @@
 hr{
     height: 5px;
 }
+
+#logo{
+    width: 400px;
+}
+
+#orginal:hover{
+    background-color: yellow;
+}
