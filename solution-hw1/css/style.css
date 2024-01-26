@@ -7,6 +7,8 @@ body{
 text-align: center;
 }
 
+
+
 a:hover{
     background-color: yellow;
 }
@@ -27,19 +29,17 @@ a:active{
     height: 200px;
 }
 
-hr{
-    height: 2px;
-}
-
 #logo{
     width: 400px;
 }
-.all{
-    width: 400px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    }
+ 
+#descr{
+    text-align: left;
+}
+
+#remove{
+    text-decoration: underline;
+}
 
 #roll1 img{
     width: 400px;
@@ -49,6 +49,16 @@ hr{
 #roll1:hover{
     background-color: yellow;
     font-weight: bold;
+}
+
+hr.line1{
+    border-top: 3px solid black;
+}
+
+hr.line2{
+    border-top: 3px solid black;
+    width: 800px;
+
 }
 
 .flex-container > div {
@@ -63,4 +73,21 @@ hr{
     background-color: white;
   }
 
+
+  .button{
+    background-color: yellow;
+    padding: 10px 25px;
+    font-weight: bold;
+  }
+
+  .flex-container > div{
+    font-size: 20px;
+  }
+
+  .all{
+    width: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    }
 
