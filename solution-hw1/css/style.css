@@ -1,14 +1,16 @@
 a {
     text-decoration: none;
+    color: black;
 }
 
 body{
 text-align: center;
 }
-#products a.active{
+
+a:hover{
     background-color: yellow;
 }
-#cart a.active{
+a:active{
     background-color: yellow;
 }
 
@@ -44,9 +46,9 @@ hr{
     height: 400px;
 }
 
-
 #roll1:hover{
     background-color: yellow;
+    font-weight: bold;
 }
 
 .flex-container > div {
