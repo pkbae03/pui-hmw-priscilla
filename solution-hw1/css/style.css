@@ -34,13 +34,21 @@ text-align: center;
     width: 400px;
 }
  
-#descr{
+.all{
     text-align: left;
 }
 
 #remove{
     text-decoration: underline;
 }
+.current {
+    background-color: yellow;
+    }
+
+select{
+    width: 150px;
+}
+
 
 #roll1 img{
     width: 400px;
@@ -49,6 +57,9 @@ text-align: center;
 
 #roll1:hover{
     background-color: yellow;
+}
+
+#roll1:hover span{
     font-weight: bold;
 }
 
@@ -77,12 +88,18 @@ hr.line2{
 
   .button{
     background-color: yellow;
-    padding: 10px 25px;
+    padding: 10px 20px;
     font-weight: bold;
   }
 
   .flex-container > div{
     font-size: 20px;
+  }
+
+  .flex-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .all{
