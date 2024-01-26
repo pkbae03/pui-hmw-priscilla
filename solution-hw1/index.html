@@ -9,16 +9,16 @@
 <body>
   <a href="index.html">
     <div id = "logo">
-      <img src="/assets/logo/logo-01.svg" alt="Logo"/>
+      <img src="./assets/logo/logo-01.svg" alt="Logo"/>
     </div>
   </a>
     <hr class = "line1">
 
-    <div>
-      <h4 id="products">
+    <div id = "nav">
+      <h4 id="top">
         <a href="index.html">PRODUCTS</a>
       </h1>
-      <h4 id ="cart">
+      <h4 id ="top">
         <a href="cart.html">CART</a>
       </h1>
     </div>
@@ -47,7 +47,7 @@
 
   <a href="orginal.html">
     <div id="roll1">
-      <img src="/assets/products/raisin-cinnamon-roll.jpg" alt="Raisin Cinammon Roll"/>
+      <img src="./assets/products/raisin-cinnamon-roll.jpg" alt="Raisin Cinammon Roll"/>
       <p>Raisin cinammon roll</p>
       <p>$2.99</p>
     </div>
@@ -55,7 +55,7 @@
 
   <a href="orginal.html"> 
     <div id="roll1">
-      <img src="/assets/products/walnut-cinnamon-roll.jpg" alt="Walnut Cinammon Roll"/>
+      <img src="./assets/products/walnut-cinnamon-roll.jpg" alt="Walnut Cinammon Roll"/>
       <p>Walnut cinammon roll</p>
       <p>$3.49</p>
     </div>
@@ -63,7 +63,7 @@
 
   <a href="orginal.html"> 
     <div id="roll1">
-      <img src="/assets/products/double-chocolate-cinnamon-roll.jpg" alt="Double-Chocolate Cinammon Roll"/>
+      <img src="./assets/products/double-chocolate-cinnamon-roll.jpg" alt="Double-Chocolate Cinammon Roll"/>
       <p>Double-chocolate cinammon roll</p>
       <p>$3.99</p>
     </div>
@@ -71,12 +71,26 @@
 
   <a href="orginal.html"> 
     <div id="roll1">
-      <img src="/assets/products/strawberry-cinnamon-roll.jpg" alt="Strawberry Cinammon Roll"/>
+      <img src="./assets/products/strawberry-cinnamon-roll.jpg" alt="Strawberry Cinammon Roll"/>
       <p>Strawberry cinammon roll</p>
       <p>$3.99</p>
     </div>
   </a>
 </div>
 
+<script>
+  // Add active class to the current button (highlight it)
+  var header = document.getElementById("nav");
+  var btns = header.getElementsByClassName("top");
+  for (var i = 0; i < top.length; i++) {
+    top[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    if (current.length > 0) { 
+      current[0].className = current[0].className.replace(" active", "");
+    }
+    this.className += " active";
+    });
+  }
+  </script>
   </body>
 </html>

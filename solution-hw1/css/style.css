@@ -9,12 +9,13 @@ text-align: center;
 
 
 
-a:hover{
+.active, #top a:hover{
     background-color: yellow;
 }
-a:active{
+#products a:focus{
     background-color: yellow;
 }
+
 
 #roll img{
     width: 400px;
