@@ -17,12 +17,9 @@ text-align: center;
     width: 50%;
 }
 
-#roll1 img{
-    width: 600px;
-}
-
 #roll2 img{
     width: 200px;
+    height: 200px;
 }
 
 hr{
