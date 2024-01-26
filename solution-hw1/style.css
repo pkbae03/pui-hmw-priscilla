@@ -1,4 +1,4 @@
-*{
+a {
     text-decoration: none;
 }
 
@@ -18,7 +18,6 @@ text-align: center;
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
 }
 
 #roll2 img{
@@ -33,14 +32,33 @@ hr{
 #logo{
     width: 400px;
 }
+.all{
+    width: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    }
 
-#roll.div:hover{
+#roll1 img{
+    width: 400px;
+    height: 400px;
+}
+
+
+#roll1:hover{
     background-color: yellow;
 }
 
+.flex-container > div {
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+  }
 
-.dropdown{
-    
-}
+  .flex-container{
+    justify-content: center;
+    display: flex;
+    background-color: white;
+  }
 
 
