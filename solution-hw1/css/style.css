@@ -47,7 +47,7 @@ select{
 /*created to left align all of the text in the product divs while also centering the images*/
 .all{
     text-align: left;
-    width: 400px;
+    width: 406px;
     display: block;
     margin-left: auto;
     margin-right: auto;
