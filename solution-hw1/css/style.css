@@ -2,19 +2,14 @@ a {
     text-decoration: none;
     color: black;
 }
-
 body{
 text-align: center;
 }
 
-
-
-.active, #top a:hover{
-    background-color: yellow;
+select{
+    width: 150px;
 }
-#products a:focus{
-    background-color: yellow;
-}
+
 
 
 #roll img{
@@ -23,6 +18,11 @@ text-align: center;
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+#roll1 img{
+    width: 400px;
+    height: 400px;
 }
 
 #roll2 img{
@@ -34,25 +34,8 @@ text-align: center;
     width: 400px;
 }
  
-.all{
-    text-align: left;
-}
-
 #remove{
     text-decoration: underline;
-}
-.current {
-    background-color: yellow;
-    }
-
-select{
-    width: 150px;
-}
-
-
-#roll1 img{
-    width: 400px;
-    height: 400px;
 }
 
 #roll1:hover{
@@ -62,6 +45,21 @@ select{
 #roll1:hover span{
     font-weight: bold;
 }
+
+
+
+
+.all{
+    text-align: left;
+    width: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.current {
+    background-color: yellow;
+    font-weight: bold;
+    }
 
 hr.line1{
     border-top: 3px solid black;
@@ -102,10 +100,4 @@ hr.line2{
     justify-content: center;
   }
 
-  .all{
-    width: 400px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    }
 
