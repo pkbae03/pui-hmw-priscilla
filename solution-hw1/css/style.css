@@ -1,54 +1,50 @@
 a {
     text-decoration: none;
-    color: black;
+    color: black; /*getting rid of all the link styles and making it black*/
 }
 body{
 text-align: center;
-}
+} /*aligning all of the text content in the center*/
 
 select{
-    width: 150px;
+    width: 150px; /*making the dropdowns a bigger size*/
 }
 
 
 
-#roll img{
+#roll img, #roll1 img{  /*centering and sizing the original cinammon roll image on the detail page*/
     width: 400px;
     height: 400px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    border: 3px solid black;
 }
 
-#roll1 img{
-    width: 400px;
-    height: 400px;
-}
-
-#roll2 img{
+#roll2 img{ /*sizing the cart images*/
     width: 200px;
     height: 200px;
+    border: 3px solid black;
 }
 
-#logo{
+#logo{ /*sizing logo*/
     width: 400px;
 }
  
+/*underlining the remove on the cart*/
 #remove{
     text-decoration: underline;
 }
 
+/*creating hover highlight for the products */
 #roll1:hover{
     background-color: yellow;
 }
-
+/*hover turns product name bold*/
 #roll1:hover span{
     font-weight: bold;
 }
 
 
 
-
+/*created to left align all of the text in the product divs while also centering the images*/
 .all{
     text-align: left;
     width: 400px;
@@ -56,10 +52,12 @@ select{
     margin-left: auto;
     margin-right: auto;
 }
+/*shows user which page they are on*/
 .current {
     background-color: yellow;
     font-weight: bold;
     }
+
 
 hr.line1{
     border-top: 3px solid black;
@@ -71,33 +69,26 @@ hr.line2{
 
 }
 
+/*spacing and sizing for the flex container add to cart and price in cart page*/
 .flex-container > div {
     margin: 10px;
     padding: 20px;
-    font-size: 30px;
+    font-size: 20px;
   }
-
-  .flex-container{
+/*centered content in the flex container*/ 
+  .flex-container{ 
     justify-content: center;
     display: flex;
     background-color: white;
+    align-items: center;
   }
 
-
+  /*style button*/
   .button{
     background-color: yellow;
     padding: 10px 20px;
     font-weight: bold;
   }
 
-  .flex-container > div{
-    font-size: 20px;
-  }
 
-  .flex-container{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-
+ 
