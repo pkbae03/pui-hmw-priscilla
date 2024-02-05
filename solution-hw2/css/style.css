@@ -65,14 +65,30 @@ padding: 20px;
 width: 100%;
 }
 
+.circle{    
+    padding-top: 7px;
+    height: 23px;
+    width: 20px;
+    font-weight: bold;
+    background-color: red;
+    border-radius: 50%;
+    color: white;
+    position: absolute;
+    margin-right: -100px;
+}
+
 .other{
-    padding: 50px ;
+    padding: 100px;
     font-weight: normal;
 }
 #descr{
+    padding-top: 30px;
     text-align: left;
     font-weight: normal;
-    vertical-align: text-bottom;
+}
+
+#nav{
+    padding-bottom: 30px;
 }
 
 /*shows user which page they are on*/
@@ -88,7 +104,7 @@ display: inline;
 
 
 hr.line1{
-    border-top: 3px solid black;
+    border-top: 5px solid black;
     width: 100%;
 }
 /*END OF NAVBAR*/
@@ -181,7 +197,7 @@ select{
 }
 
 hr.line2{
-    border-top: 3px solid black;
+    border-top: 5px solid black;
     width: auto;
 
 }
