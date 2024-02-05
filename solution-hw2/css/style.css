@@ -54,6 +54,11 @@ width: 295px;
 #logo{ /*sizing logo*/
     width: 400px;
 }
+#descr{
+    padding-top: 30px;
+    text-align: left;
+    font-weight: normal;
+}
 .row-nav {
     text-align: right;
     display: inline-flex;
@@ -93,11 +98,7 @@ justify-content: left;
     font-weight: normal;
     padding-right: 50px;
 }
-#descr{
-    padding-top: 30px;
-    text-align: left;
-    font-weight: normal;
-}
+
 
 
 /*shows user which page they are on*/
@@ -121,6 +122,10 @@ hr.line1{
 
 
 /*ORIGINAL PAGE*/
+select{
+    width: 150px; /*making the dropdowns a bigger size*/
+    padding: 5px;
+}
 
 #roll img{
     width: 600px;
@@ -163,10 +168,7 @@ hr.line1{
     align-items: center;
   }
 
-select{
-    width: 150px; /*making the dropdowns a bigger size*/
-    padding: 5px;
-}
+
 /*END OF ORIGINAL PAGE*/
 
 
@@ -182,15 +184,7 @@ select{
 }
 
 
-  /*style button*/
-  .button{
-    background-color: yellow;
-    padding: 5px 30px;
-    font-weight: bold;
-    float: right;
-  }
-
-  #roll2 img{ /*sizing the cart images*/
+#roll2 img{ /*sizing the cart images*/
     width: 200px;
     height: 200px;
     border: 3px solid black;
@@ -205,6 +199,13 @@ hr.line2{
 
 }
 
+/*style button*/
+.button{
+    background-color: yellow;
+    padding: 5px 30px;
+    font-weight: bold;
+    float: right;
+}
 .container{
     width: 625px;
     margin: auto;
