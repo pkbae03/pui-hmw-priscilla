@@ -17,7 +17,8 @@ text-align: center;
 }
 
 #roll1{
-    width: 295px;
+    width: 291px;
+    padding: 5px;
 }
 
 #roll1 span{
@@ -57,7 +58,7 @@ width: 295px;
     text-align: right;
     display: inline-flex;
     width: 100%;
-    justify-content: center;
+    justify-content: right;
 }
 
 .col-nav{
@@ -65,21 +66,32 @@ padding: 20px;
 width: 100%;
 }
 
+.row.circle{
+justify-content: left;
+}
+
 .circle{    
-    padding-top: 7px;
-    height: 23px;
-    width: 20px;
+    padding: 5px;
+    height: 17px;
+    width: 10px;
     font-weight: bold;
     background-color: red;
-    border-radius: 50%;
+    border-radius: 55%;
     color: white;
-    position: absolute;
-    margin-right: -100px;
+    margin-top: -10px;
+    margin-left: -10px;
+
 }
 
 .other{
-    padding: 100px;
+    font-size: 25px;
     font-weight: normal;
+    padding-left: 50px;
+}
+.otherp{
+    font-size: 25px;
+    font-weight: normal;
+    padding-right: 50px;
 }
 #descr{
     padding-top: 30px;
@@ -87,20 +99,13 @@ width: 100%;
     font-weight: normal;
 }
 
-#nav{
-    padding-bottom: 30px;
-}
 
 /*shows user which page they are on*/
 .current {
     background-color: yellow;
     font-weight: bold;
+    font-size: 25px;
     }
-
-
-.navbar li{
-display: inline;
-}
 
 
 hr.line1{
@@ -156,9 +161,7 @@ hr.line1{
     bottom: -70px;
     display: flex;
     align-items: center;
-
   }
-
 
 select{
     width: 150px; /*making the dropdowns a bigger size*/
@@ -229,6 +232,5 @@ hr.line2{
 .col h3{
     font-weight: normal;
 }
-
 
 /*END OF CART PAGE*/
