@@ -7,61 +7,69 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <a href="index.html">
-    <div id = "logo">
-      <img src="./assets/logo/logo-01.svg" alt="Logo"/>
+    <div class="row-nav">
+        <a href="index.html">
+           <div id = "logo">
+               <img src="./assets/logo/logo-01.svg" alt="Logo"/>
+           </div>
+       </a>
+       <div class="col-nav">
+               <p>
+                 <a href="index.html" class = "current">PRODUCTS</a>
+                 <a href="cart.html" >CART</a> <!--makes cart page highlighted when on the page-->
+               </p>
+           <hr class = "line1">
+           <br>
+           <p>Our hand-made cinammon rolls</p>
+       </div>
     </div>
-  </a>
 
-    <hr class = "line1">
 
-    <div>
-      <p>
-        <a href="index.html" class = "current">PRODUCTS</a> <!-- makes product highlighted when on the product page-->
 
-      </p>
-      <p>
-        <a href="cart.html">CART</a>
-      </p>
-    </div>
 
-    <div id="roll">
-      <p>
-        Original cinnamon roll
-      </p>
-      <img src="./assets/products/original-cinnamon-roll.jpg" alt="Original Roll">
-    </div>
-    <p>
-      Customize our delicious hand-made cinnamon roll to your liking! <br>
-    </p>
+   <div class="row">
+        <div class = "col">
+            <div id="roll">
+                <img src="./assets/products/original-cinnamon-roll.jpg" alt="Original Roll">
+            </div>
+        </div>
 
-      <label for="flavor">Glazing:</label>
-      <br><br>
-      <!--dropdown for glazing type -->
+        <div class = "col">
+            <p>Customize our delicious, hand-made cinnamon roll to your liking! </p>
 
-      <select name="flavor" id="flavor">
-        <option value="original">Keep original</option>
-        <option value="sugar">Sugar milk</option>
-        <option value="vanilla">Vanilla milk</option>
-        <option value="choco">Double chocolate</option>
-      </select>
-<br> <br>
+            <div id = "label">
+                <label for="flavor">Glazing:</label>
+                <br><br>
+                <!--dropdown for glazing type -->
 
-      <label for="size">Pack Size:</label>
-      <br><br>
-      <!-- dropdown button for pack size-->
+                <select name="flavor" id="flavor">
+                    <option value="original">Keep original</option>
+                    <option value="sugar">Sugar milk</option>
+                    <option value="vanilla">Vanilla milk</option>
+                    <option value="choco">Double chocolate</option>
+                </select>
+            </div>
 
-      <select name="size" id="size">
-        <option value="1">1</option>
-        <option value="3">3</option>
-        <option value="6">6</option>
-        <option value="12">12</option>
-      </select>
-      
-      <div class="flex-container">
-        <div>$2.49</div>
-        <div><button class = "button">Add to Cart</button></div>
-      </div>
+            <div id="label1">
+                <label for="size">Pack Size:</label>
+                <br><br>
+                <!-- dropdown button for pack size-->
+
+                <select name="size" id="size">
+                    <option value="1">1</option>
+                    <option value="3">3</option>
+                    <option value="6">6</option>
+                    <option value="12">12</option>
+                </select>
+            </div>
+                
+                <div class="flex-container">
+                    <div> <h4>$2.49</h4></div>
+                    <div><button class = "button">Add to Cart</button></div>
+                </div>
+
+        </div>
+    </div> 
   
 </body>
 </html>
