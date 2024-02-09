@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Gallery</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="row-nav">
+        <a href="index.html">
+           <div id = "logo">
+               <img src="./assets/logo/logo-01.svg" alt="Logo"/>
+           </div>
+       </a>
+       
+       <div class="col-nav">
+            <div class="row-nav">
+                <div class="col">
+                     <a href="index.html" class = "current">PRODUCTS</a>
+                </div>
+                <div class="col">
+                    <a href="cart.html" class = "other">CART</a> <!--makes cart page highlighted when on the page-->
+                </div>
+                <div class="col">
+                    <div class="circle">2</div>
+                </div>
+            </div>
+           <hr class = "line1">
+           <br>
+           <h2 id = "descr">Our hand-made cinammon rolls</h2>
+       </div>
+    </div>
+
+
+
+
+
+   <div class="row">
+        <div class = "col">
+            <div id="roll">
+                <img src="./assets/products/original-cinnamon-roll.jpg" alt="Original Roll">
+            </div>
+        </div>
+
+        <div class = "col">
+            <h3>Customize our delicious, hand-made cinnamon roll to your liking! </h3>
+
+            <div id = "label">
+                <label for="flavor">Glazing:</label>
+                <br><br>
+                <!--dropdown for glazing type -->
+
+                <select name="flavor" id="glazingOptions"  onchange="glazingChange(this)">
+                    <option value="original">Keep original</option>
+                    <option value="sugar">Sugar milk</option>
+                    <option value="vanilla">Vanilla milk</option>
+                    <option value="choco">Double chocolate</option>
+                </select>
+            </div>
+
+            <div id="label1">
+                <label for="size">Pack Size:</label>
+                <br><br>
+                <!-- dropdown button for pack size-->
+
+                <select name="size" id="size">
+                    <option value="1">1</option>
+                    <option value="3">3</option>
+                    <option value="6">6</option>
+                    <option value="12">12</option>
+                </select>
+            </div>
+                
+                <div class="flex-container">
+                    <div> <h4>$2.49</h4></div>
+                    <div><button class = "button">Add to Cart</button></div>
+                </div>
+
+        </div>
+    </div> 
+  
+</body>
+</html>

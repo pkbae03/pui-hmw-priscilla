@@ -1,0 +1,237 @@
+a {
+    text-decoration: none;
+    color: black; /*getting rid of all the link styles and making it black*/
+}
+body{
+text-align: center;
+} /*aligning all of the text content in the center*/
+
+
+
+ 
+/*PRODUCT GALLERY PAGE*/
+#roll1 img{  /*centering and sizing the original cinammon roll image on the detail page*/
+    width: 285px;
+    height: 285px;
+    border: 3px solid black;
+}
+
+#roll1{
+    width: 291px;
+    padding: 5px;
+}
+
+#roll1 span{
+margin-bottom: 200px;
+text-decoration: underline;
+
+}
+/*creating hover highlight for the products */
+#roll1:hover{
+    background-color: yellow;
+}
+/*hover turns product name bold*/
+#roll1 span:hover{
+    font-weight: bold;
+}
+
+/*rows and columns for the index page in order to create alignment*/
+
+
+.col1{
+padding: 20px;
+width: 295px;
+}
+/*END OF PRODUCT GALLERY*/
+
+
+
+
+
+
+
+/*NAVBAR*/
+#logo{ /*sizing logo*/
+    width: 400px;
+}
+#descr{
+    padding-top: 30px;
+    text-align: left;
+    font-weight: normal;
+}
+.row-nav {
+    text-align: right;
+    display: inline-flex;
+    width: 100%;
+    justify-content: right;
+}
+
+.col-nav{
+padding: 20px;
+width: 100%;
+}
+
+.row.circle{
+justify-content: left;
+}
+
+.circle{    
+    padding: 5px;
+    height: 17px;
+    width: 10px;
+    font-weight: bold;
+    background-color: red;
+    border-radius: 55%;
+    color: white;
+    margin-top: -10px;
+    margin-left: -10px;
+
+}
+
+.other{
+    font-size: 25px;
+    font-weight: normal;
+    padding-left: 50px;
+}
+.otherp{
+    font-size: 25px;
+    font-weight: normal;
+    padding-right: 50px;
+}
+
+
+
+/*shows user which page they are on*/
+.current {
+    background-color: yellow;
+    font-weight: bold;
+    font-size: 25px;
+    }
+
+
+hr.line1{
+    border-top: 5px solid black;
+    width: 100%;
+}
+/*END OF NAVBAR*/
+
+
+
+
+
+
+
+/*ORIGINAL PAGE*/
+select{
+    width: 150px; /*making the dropdowns a bigger size*/
+    padding: 5px;
+}
+
+#roll img{
+    width: 600px;
+    border: 3px solid black;
+}
+
+#label{
+    padding-top: 150px;
+}
+#label1{
+    padding-top: 50px;
+}
+
+.row {
+    text-align: left;
+    display: inline-flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.col{
+    padding: 10px;
+}
+
+.col h3 {
+    width: 190px;
+}
+/*spacing and sizing for the flex container add to cart and price in cart page*/
+.flex-container > div {
+    padding: 20px;
+
+  }
+
+
+/*centered content in the flex container*/ 
+.flex-container{ 
+    position: absolute;
+    bottom: -70px;
+    display: flex;
+    align-items: center;
+  }
+
+
+/*END OF ORIGINAL PAGE*/
+
+
+
+
+
+
+/*CART PAGE*/
+/*underlining the remove on the cart*/
+#remove{
+    padding-top: 5px;
+    text-decoration: underline;
+}
+
+
+#roll2 img{ /*sizing the cart images*/
+    width: 200px;
+    height: 200px;
+    border: 3px solid black;
+}
+#total{
+    text-align: center;
+}
+
+hr.line2{
+    border-top: 5px solid black;
+    width: auto;
+
+}
+
+/*style button*/
+.button{
+    background-color: yellow;
+    padding: 5px 30px;
+    font-weight: bold;
+    float: right;
+}
+.container{
+    width: 625px;
+    margin: auto;
+}
+
+.container .row{
+    justify-content: left;
+    display: flex;
+}
+
+.container .col{
+    width: 100%;
+    padding-left: 30px;
+}
+
+.col3{
+    width: 200px;
+}
+.col3 h3{
+    font-weight: normal;
+    text-align: right;
+    padding-top: 15px;
+}
+
+.col h3{
+    font-weight: normal;
+}
+
+/*END OF CART PAGE*/
