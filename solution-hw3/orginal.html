@@ -7,6 +7,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <script src="./js/script.js"></script>
     <div class="row-nav">
         <a href="index.html">
            <div id = "logo">
@@ -52,10 +53,10 @@
                 <!--dropdown for glazing type -->
 
                 <select name="flavor" id="glazingOptions"  onchange="glazingChange(this)">
-                    <option value="original">Keep original</option>
-                    <option value="sugar">Sugar milk</option>
-                    <option value="vanilla">Vanilla milk</option>
-                    <option value="choco">Double chocolate</option>
+                    <option value="0">Keep original</option>
+                    <option value="0">Sugar milk</option>
+                    <option value=".5">Vanilla milk</option>
+                    <option value="1.5">Double chocolate</option>
                 </select>
             </div>
 
@@ -64,7 +65,7 @@
                 <br><br>
                 <!-- dropdown button for pack size-->
 
-                <select name="size" id="size">
+                <select name="size" id="sizeOptions" onchange="sizeChange(this)">
                     <option value="1">1</option>
                     <option value="3">3</option>
                     <option value="6">6</option>
@@ -73,12 +74,15 @@
             </div>
                 
                 <div class="flex-container">
-                    <div> <h4>$2.49</h4></div>
+                    <div id = "basePrice"> <h4>$2.49</h4></div>
                     <div><button class = "button">Add to Cart</button></div>
                 </div>
 
         </div>
     </div> 
   
+
+
+    
 </body>
 </html>
