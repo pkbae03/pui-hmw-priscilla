@@ -139,6 +139,10 @@ select{
     padding-top: 50px;
 }
 
+#basePrice{
+    font-weight: bold;
+}
+
 .row {
     text-align: left;
     display: inline-flex;
@@ -167,6 +171,8 @@ select{
     display: flex;
     align-items: center;
   }
+
+
 
 
 /*END OF ORIGINAL PAGE*/

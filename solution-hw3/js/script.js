@@ -1,19 +1,27 @@
-function glazingChange(element) {
+
+
+function glazingChange() {
     // get value of selected glazing option
-    const priceChange = element.value;
-    const glaze = document.getElementById(glaze).glaze;
+    const basePrice = 2.49; 
+    const glazePrice = parseFloat(document.getElementById("glazingOptions").value);
+    const total = (basePrice + glazePrice) * parseInt(document.getElementById('sizeOptions').value);
 
-    for i 
 
-    
-  // add your code to do update the price ...
+    document.getElementById("basePrice").innerHTML = "$" + total.toFixed(2);
+    document.getElementById('basePrice').style.fontWeight = "bold";
+
+
   }
   
-(basePrice + glazePrice) * size
-  function sizeChange(element) {
-    // get value of selected glazing option
-    const priceChange = element.value;
+  function sizeChange() {
+    // get value of selected size option
+
+    const basePrice = 2.49; 
+    const glazePrice = parseFloat(document.getElementById("glazingOptions").value);
+    const total = (basePrice + glazePrice) * parseInt(document.getElementById('sizeOptions').value);
+   
+    document.getElementById("basePrice").innerHTML = "$" + total.toFixed(2);
+    document.getElementById('basePrice').style.fontWeight = "bold";
     
-    
-  // add your code to do update the price ...
+
   }
