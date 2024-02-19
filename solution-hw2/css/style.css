@@ -22,10 +22,10 @@ text-align: center;
 }
 
 #roll1 span{
-margin-bottom: 200px;
-text-decoration: underline;
-
+    margin-bottom: 200px;
+    text-decoration: underline;
 }
+
 /*creating hover highlight for the products */
 #roll1:hover{
     background-color: yellow;
