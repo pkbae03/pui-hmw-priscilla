@@ -3,14 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Product Gallery</title>
+  <title>Product Detail</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <script src="./js/script.js"></script>
     <div class="row-nav">
         <a href="index.html">
-           <div id = "logo">
+           <div id="logo">
                <img src="./assets/logo/logo-01.svg" alt="Logo"/>
            </div>
        </a>
@@ -18,71 +17,52 @@
        <div class="col-nav">
             <div class="row-nav">
                 <div class="col">
-                     <a href="index.html" class = "current">PRODUCTS</a>
+                     <a href="index.html" class="current">PRODUCTS</a>
                 </div>
                 <div class="col">
-                    <a href="cart.html" class = "other">CART</a> <!--makes cart page highlighted when on the page-->
+                    <a href="cart.html" class="other">CART</a>
                 </div>
                 <div class="col">
                     <div class="circle">2</div>
                 </div>
             </div>
-           <hr class = "line1">
+           <hr class="line1">
            <br>
-           <h2 id = "descr">Our hand-made cinammon rolls</h2>
+           <h2 id="descr">Our hand-made cinnamon rolls</h2>
        </div>
     </div>
 
-
-
-
-
-   <div class="row">
-        <div class = "col">
+    <div class="row">
+        <div class="col">
             <div id="roll">
-                <img src="./assets/products/original-cinnamon-roll.jpg" alt="Original Roll">
+                <img src="./assets/products/original-cinnamon-roll.jpg" alt="Cinnamon Roll" id="rollImage">
             </div>
         </div>
 
-        <div class = "col">
-            <h3>Customize our delicious, hand-made cinnamon roll to your liking! </h3>
-
-            <div id = "label">
+        <div class="col">
+            <h3>Customize our delicious, hand-made cinnamon roll to your liking!</h3>
+            
+            <div id="label">
                 <label for="flavor">Glazing:</label>
                 <br><br>
-                <!--dropdown for glazing type -->
-
-                <select name="flavor" id="glazingOptions"  onchange="glazingChange(this)">
-                    <option value="0">Keep original</option>
-                    <option value="0">Sugar milk</option>
-                    <option value=".5">Vanilla milk</option>
-                    <option value="1.5">Double chocolate</option>
-                </select>
+                <!-- dropdown for glazing type -->
+                <select name="flavor" id="glazingOptions" onchange="glazingChange()"></select>
             </div>
-
+        
             <div id="label1">
                 <label for="size">Pack Size:</label>
                 <br><br>
-                <!-- dropdown button for pack size-->
-
-                <select name="size" id="sizeOptions" onchange="sizeChange(this)">
-                    <option value="1">1</option>
-                    <option value="3">3</option>
-                    <option value="5">6</option>
-                    <option value="10">12</option>
-                </select>
+                <!-- dropdown button for pack size -->
+                <select name="size" id="sizeOptions" onchange="sizeChange()"></select>
             </div>
-                
-                <div class="flex-container ">
-                    <div id = "basePrice"> <strong>$2.49</strong></div>
-                    <div><button class = "button">Add to Cart</button></div>
-                </div>
-
+        
+            <div class="flex-container">
+                <strong><div id="basePrice"></div></strong>
+                <div><button class="button" onclick="addToCart()">Add to Cart</button></div>
+            </div>
         </div>
-    </div> 
-  
-
-
     
+    <script src="./js/rollsData.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 </html>
