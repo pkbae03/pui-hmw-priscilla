@@ -56,6 +56,8 @@ function sizeChange() {
   document.getElementById("basePrice").innerHTML = "$" + total.toFixed(2);
   document.getElementById('basePrice').style.fontWeight = "bold";
 }
+
+
 //creating an empty array
 const cart = [];
 
@@ -84,7 +86,7 @@ function addToCart() {
   console.log(cart);
 }
 
-//  function to update the roll description based on selected roll
+// function to update the roll description based on selected roll
 function changeRollName(selectedRoll) {
   const h2Element = document.getElementById('descr');
   h2Element.textContent = selectedRoll + " Cinnamon Roll";
