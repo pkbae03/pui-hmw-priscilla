@@ -57,24 +57,28 @@ function sizeChange() {
   document.getElementById('basePrice').style.fontWeight = "bold";
 }
 
-/* condensed set of glazing prices for easier access in roll class */
-let glazingPrices = {
-  'Original':0,
-  'Sugar Milk':0,
-  'Vanilla Milk':0.5,
-  'Double Chocolate': 1
-}
-
-/*  condensed set of pack prices for easier access in roll class */
-let packPrices = {
-  'One': 1,
-  'Three':3,
-  'Six':5,
-  'Twelve':10
-}
 
 //creating an empty array
 const cart = [];
+
+
+
+// creates an object with options for glazing and pack size
+const options = {
+  glazing: {
+      "Keep original": 0,
+      "Sugar milk": 0,
+      "Vanilla milk": 0.5,
+      "Double chocolate": 1.5
+  },
+  size: {
+      "1": 1,
+      "3": 3,
+      "6": 5,
+      "12": 10
+  }
+};
+
 
 class Roll {
   constructor(rollType, rollGlazing, packSize, basePrice) {
@@ -82,19 +86,21 @@ class Roll {
       this.glazing =  rollGlazing;
       this.size = packSize;
       this.basePrice = basePrice;
-      this.finalPrice = ((this.basePrice + glazingPrices[this.glazing]) * packPrices[this.size]).toFixed(2);
-      this.imageFile = "images/" + rolls[this.type]['imageFile'];
+      this.price = (basePrice + options.glazing[rollGlazing]) * options.size[packSize];
+      this.imagePath = "./assets/products/" + rolls[rollType].imageFile;
   }
 }
 
-var orginal = new Roll("Original","Sugar Milk","One",2.49)
-cart.push(orginal)
-var walnut = new Roll("Walnut","Vanilla Milk","Twelve",3.49);
+var original = new Roll("Original","Sugar Milk","1",2.49)
+cart.push(original)
+var walnut = new Roll("Walnut","Vanilla Milk","12",3.49);
 cart.push(walnut);
-var raisin = new Roll("Raisin","Sugar Milk","Three",2.99);
+var raisin = new Roll("Raisin","Sugar Milk","3",2.99);
 cart.push(raisin);
-var apple = new Roll("Apple","Original","Three",3.49);
+var apple = new Roll("Apple","Original","3",3.49);
 cart.push(apple);
+
+
 
 //adding rolls to the cart array when button is clicked 
 function addToCart() {
