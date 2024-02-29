@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Product Gallery</title>
   <link rel="stylesheet" href="css/style.css">
-  <script src="./js/script.js"></script>
   <script src="./js/rollsData.js"></script>
+  <script src="./js/cart.js"></script>
 
 
 </head>
@@ -36,11 +36,12 @@
        </div>
     </div>
 
-<div class="cartContainer">
-    <div class="row">
-                <div id="roll">
+    <div class="cartContainer">
+        <template id = "cartItemTemplate">
+            <div class="row">
+                <div class="cartItems">
                     <img class = "roll-image" src="" alt="Apple Cinammon Roll"/>
-                    <h3 id = "remove">Remove</h3>
+                    <h3 class = "remove">Remove</h3>
                 </div>
 
                 <div class="col">
@@ -51,10 +52,11 @@
 
                 <div class="col3">
                     <br><br>
-                    <h3 id = "packPrice">$2.49</h3>
+                    <h3 class = "packPrice">$2.49</h3>
                 </div>
+             </div>
+        </template> 
     </div>
-
 
     <hr class = "line2">
 

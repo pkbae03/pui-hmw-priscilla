@@ -1,3 +1,5 @@
+
+
 const queryString = window.location.search;
 const params = new URLSearchParams(queryString);
 const rollType = params.get('roll');
@@ -61,47 +63,14 @@ function sizeChange() {
 //creating an empty array
 const cart = [];
 
-
-
-// creates an object with options for glazing and pack size
-const options = {
-  glazing: {
-      "Keep original": 0,
-      "Sugar milk": 0,
-      "Vanilla milk": 0.5,
-      "Double chocolate": 1.5
-  },
-  size: {
-      "1": 1,
-      "3": 3,
-      "6": 5,
-      "12": 10
-  }
-};
-
-
 class Roll {
   constructor(rollType, rollGlazing, packSize, basePrice) {
       this.type = rollType;
       this.glazing =  rollGlazing;
       this.size = packSize;
       this.basePrice = basePrice;
-      this.price = (basePrice + options.glazing[rollGlazing]) * options.size[packSize];
-      this.imagePath = "./assets/products/" + rolls[rollType].imageFile;
   }
 }
-
-var original = new Roll("Original","Sugar Milk","1",2.49)
-cart.push(original)
-var walnut = new Roll("Walnut","Vanilla Milk","12",3.49);
-cart.push(walnut);
-var raisin = new Roll("Raisin","Sugar Milk","3",2.99);
-cart.push(raisin);
-var apple = new Roll("Apple","Original","3",3.49);
-cart.push(apple);
-
-
-
 //adding rolls to the cart array when button is clicked 
 function addToCart() {
   const glazingSelect = document.getElementById("glazingOptions");
