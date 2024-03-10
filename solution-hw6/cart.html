@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Gallery</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="./js/rollsData.js"></script>
+  <script src="./js/cart.js"></script>
+
+
+</head>
+<body>
+    <div class="row-nav">
+        <a href="index.html">
+           <div id = "logo">
+               <img src="./assets/logo/logo-01.svg" alt="Logo"/>
+           </div>
+       </a>
+       
+       <div class="col-nav">
+            <div class="row-nav">
+                <div class="col">
+                     <a href="index.html" class = "otherp">PRODUCTS</a>
+                </div>
+                <div class="col">
+                    <a href="cart.html" class = "current">CART</a> <!--makes cart page highlighted when on the page-->
+                </div>
+                <div class="col">
+                    <div class="circle">2</div>
+                </div>
+            </div>
+           <hr class = "line1">
+           <br>
+           <h2 id = "descr">Our hand-made cinammon rolls</h2>
+       </div>
+    </div>
+
+    <div class="cartContainer">
+        <template id = "cartItemTemplate">
+            <div class="row">
+                <div class="cartItems">
+                    <img class = "roll-image" src="" alt="Apple Cinammon Roll"/>
+                    <h3 class = "remove">Remove</h3>
+                </div>
+
+                <div class="col">
+                    <h3 class = "roll-name">Original Cinnamon Roll</h3>
+                    <h3 class = "roll-type">Glazing: Keep Original</h3>
+                    <h3 class = "packSize">Pack Size:1</h3>
+                </div>
+
+                <div class="col3">
+                    <br><br>
+                    <h3 class = "packPrice">$2.49</h3>
+                </div>
+             </div>
+        </template> 
+    </div>
+
+    <hr class = "line2">
+
+    <div class="row">
+        <div class="col">
+            <h3>Total</h3>
+        </div>
+        <div class="col3">
+            <h3 id = "totalPrice">$29.94</h3>
+        </div>
+    </div>
+
+    <button class="button"><h3>Checkout</h3></button>
+</div>
+
+
+
+
+    
+
+
+
+
+
+
+<!--adding pictures and description of cart page -->
+
+
+
+
+
+
+</body>
+</html>
