@@ -5,6 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Product Detail</title>
   <link rel="stylesheet" href="css/style.css">
+  <script src="./js/cart.js"></script>
+  <script src="./js/rollsData.js"></script>
+  <script src="./js/script.js"></script>
+  
+
 </head>
 <body>
     <div class="row-nav">
@@ -23,7 +28,7 @@
                     <a href="cart.html" class="other">CART</a>
                 </div>
                 <div class="col">
-                    <div class="circle">2</div>
+                    <div class="circle" id="cartBadge">0</div>
                 </div>
             </div>
            <hr class="line1">
@@ -58,11 +63,10 @@
         
             <div class="flex-container">
                 <strong><div id="basePrice"></div></strong>
-                <div><button class="button" onclick="addToCart()">Add to Cart</button></div>
+                <div><button id="cartButton" onclick="addToCart()">Add to Cart</button></div>
             </div>
         </div>
     
-    <script src="./js/rollsData.js"></script>
-    <script src="./js/script.js"></script>
+
 </body>
 </html>

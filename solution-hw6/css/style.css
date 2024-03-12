@@ -150,9 +150,7 @@ select{
     padding: 10px;
 }
 
-.col h3 {
-    width: 190px;
-}
+
 /*spacing and sizing for the flex container add to cart and price in cart page*/
 .flex-container > div {
     padding: 20px;
@@ -163,9 +161,16 @@ select{
 /*centered content in the flex container*/ 
 .flex-container{ 
     position: absolute;
-    bottom: -70px;
+    bottom: -55px;
     display: flex;
     align-items: center;
+  }
+
+  #cartButton{
+    background-color: yellow;
+    padding: 5px 20px;
+    font-weight: bold;
+
   }
 
 
@@ -178,52 +183,46 @@ select{
 
 /*CART PAGE*/
 /*underlining the remove on the cart*/
-#remove{
+.remove{
     padding-top: 5px;
     text-decoration: underline;
 }
 
 
-#rollitem img{ /*sizing the cart images*/
+.roll-image{ /*sizing the cart images*/
     width: 200px;
     height: 200px;
     border: 3px solid black;
 }
-#total{
-    text-align: center;
-}
 
 hr.line2{
     border-top: 5px solid black;
-    width: auto;
+    width: 43%;
+    margin-right: 310px;
+
 
 }
 
 /*style button*/
-.button{
+.checkoutButton{
     background-color: yellow;
     padding: 5px 30px;
     font-weight: bold;
-    float: right;
+    margin-left: 670px;
+
 }
 .cartContainer{
-    width: 625px;
-    margin: auto;
-}
+    padding-top: 50px;
+    width: 600px;
+    margin-left: 35%;
 
-.cartContainer .row{
-    justify-content: left;
-    display: flex;
-}
-
-.cartContainer .col{
-    width: 100%;
-    padding-left: 30px;
 }
 
 .col3{
     width: 200px;
 }
+
+
 .col3 h3{
     font-weight: normal;
     text-align: right;
@@ -232,6 +231,16 @@ hr.line2{
 
 .col h3{
     font-weight: normal;
+    width: 190px;
 }
 
+.totalPriceRow{
+    display: inline-flex;
+    margin-left: 250px;
+
+}
+
+#totalPrice{
+    margin-left: 215px;
+}
 /*END OF CART PAGE*/

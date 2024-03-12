@@ -60,18 +60,30 @@ function sizeChange() {
 }
 
 
-//creating an empty array
-const cart = [];
 
-class Roll {
-  constructor(rollType, rollGlazing, packSize, basePrice) {
-      this.type = rollType;
-      this.glazing =  rollGlazing;
-      this.size = packSize;
-      this.basePrice = basePrice;
-  }
+
+
+  // creating a roll instance
+  class Roll {
+    constructor(rollType, rollGlazing, packSize, basePrice) {
+        this.type = rollType;
+        this.glazing = rollGlazing;
+        this.size = packSize;
+        this.basePrice = basePrice;
+        this.price = (basePrice + options.glazing[rollGlazing]) * options.size[packSize]; //create price calculation
+        // add the image path correctly based on the roll type
+        this.imagePath = `./assets/products/${rollType.toLowerCase()}-cinnamon-roll.jpg`; //create image path
+    }
 }
-//adding rolls to the cart array when button is clicked 
+
+var cart = JSON.parse(localStorage.getItem("cart"));
+// creating an empty cart array if it doesn't exist in the storage
+if (cart == null) {
+    cart = []; 
+    localStorage.setItem("cart", JSON.stringify(cart)); //placed in local storage
+}
+
+  //function to add the items to the cart and is called in the cart button
 function addToCart() {
   const glazingSelect = document.getElementById("glazingOptions");
   const glazingOption = glazingSelect.options[glazingSelect.selectedIndex];
@@ -82,13 +94,26 @@ function addToCart() {
 
   const basePrice = rolls[rollType].basePrice; // gets the base price based on the selected roll type
 
+  //creates a new roll instance with the product info
   const roll = new Roll(rollType, rollGlazing, packSize, basePrice);
+
+  //adds the new roll instance to the cart array
   cart.push(roll);
 
-  console.log(cart);
+  //updates the cart badge to display the current number of items in the cart
+  document.getElementById("cartBadge").textContent = cart.length;
+
+  //converts the cart array to JSON
+  const cartJSON = JSON.stringify(cart);
+
+  //prints the current contents of the cart in local storage
+  localStorage.setItem("cart", cartJSON);
+  console.log(localStorage.getItem("cart"));
+
 }
 
-// function to update the roll description based on selected roll
+
+//function to update the roll description based on selected roll
 function changeRollName(selectedRoll) {
   const h2Element = document.getElementById('descr');
   h2Element.textContent = selectedRoll + " Cinnamon Roll";
