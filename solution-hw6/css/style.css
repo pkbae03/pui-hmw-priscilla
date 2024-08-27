@@ -1,3 +1,5 @@
+
+
 a {
     text-decoration: none;
     color: black; /*getting rid of all the link styles and making it black*/
@@ -58,6 +60,7 @@ width: 295px;
     padding-top: 30px;
     text-align: left;
     font-weight: normal;
+
 }
 .row-nav {
     text-align: right;
